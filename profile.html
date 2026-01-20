@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Профиль участника — Community Club</title>
+
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+    <header class="site-header">
+      <div class="container header-row">
+        <a class="brand" href="index.html" aria-label="На главную">
+          <span class="brand-mark" aria-hidden="true">CC</span>
+          <span class="brand-text">Community Club</span>
+        </a>
+
+        <nav class="nav" aria-label="Основная навигация">
+          <a class="nav-link" href="index.html">Главная</a>
+          <a class="nav-link" href="search.html">Поиск</a>
+          <a class="nav-link" href="profile.html" aria-current="page">Профиль</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="section">
+      <div class="container">
+        <div class="page-head">
+          <h1>Профиль участника</h1>
+          <p class="muted">Это пример структуры профиля. Если вы перешли сюда после регистрации, откроется ваш профиль.</p>
+        </div>
+
+        <div class="grid-2">
+          <section class="card">
+            <h2 class="card-title">Карточка участника</h2>
+
+            <div id="profileCard" class="profile" aria-live="polite"></div>
+
+            <div class="divider" role="presentation"></div>
+
+            <div class="row">
+              <a class="btn btn-ghost" href="search.html">Найти единомышленников</a>
+              <button class="btn btn-danger" type="button" id="deleteProfile">Удалить профиль из браузера</button>
+            </div>
+          </section>
+
+          <section class="card">
+            <h2 class="card-title">Редактировать</h2>
+            <p class="muted">Изменения сохраняются в <code>localStorage</code>.</p>
+
+            <form id="profileForm" class="stack" novalidate>
+              <label class="field">
+                <span class="field-label">Имя *</span>
+                <input name="name" type="text" required minlength="2" />
+              </label>
+
+              <div class="grid-2">
+                <label class="field">
+                  <span class="field-label">Город</span>
+                  <input name="city" type="text" />
+                </label>
+
+                <label class="field">
+                  <span class="field-label">Роль</span>
+                  <input name="role" type="text" placeholder="Дизайнер, разработчик, маркетолог..." />
+                </label>
+              </div>
+
+              <label class="field">
+                <span class="field-label">Email *</span>
+                <input name="email" type="email" required />
+              </label>
+
+              <label class="field">
+                <span class="field-label">Интересы (через запятую) *</span>
+                <input name="interests" type="text" required placeholder="дизайн, бег, английский" />
+              </label>
+
+              <label class="field">
+                <span class="field-label">О себе</span>
+                <textarea name="bio" rows="5"></textarea>
+              </label>
+
+              <div class="row">
+                <button class="btn btn-primary" type="submit">Сохранить</button>
+                <button class="btn btn-ghost" type="button" id="loadExample">Загрузить пример</button>
+              </div>
+
+              <p id="profileMessage" class="muted" aria-live="polite"></p>
+            </form>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <p class="muted">© <span id="year"></span> Community Club. Демо‑лендинг.</p>
+        <div class="footer-links">
+          <a class="nav-link" href="index.html#join">Регистрация</a>
+          <a class="nav-link" href="search.html">Поиск</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

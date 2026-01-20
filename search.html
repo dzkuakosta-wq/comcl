@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Поиск участников — Community Club</title>
+
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+    <header class="site-header">
+      <div class="container header-row">
+        <a class="brand" href="index.html" aria-label="На главную">
+          <span class="brand-mark" aria-hidden="true">CC</span>
+          <span class="brand-text">Community Club</span>
+        </a>
+
+        <nav class="nav" aria-label="Основная навигация">
+          <a class="nav-link" href="index.html#about">О клубе</a>
+          <a class="nav-link" href="index.html#join">Вступить</a>
+          <a class="nav-link" href="search.html" aria-current="page">Поиск</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="section">
+      <div class="container">
+        <div class="page-head">
+          <h1>Поиск по интересам</h1>
+          <p class="muted">Фильтруйте участников по интересам. Откройте профиль, чтобы посмотреть детали.</p>
+        </div>
+
+        <div class="grid-2">
+          <section class="card">
+            <h2 class="card-title">Фильтры</h2>
+
+            <form id="searchForm" class="stack" autocomplete="off">
+              <label class="field">
+                <span class="field-label">Интерес</span>
+                <input id="searchInterest" name="interest" type="text" placeholder="Напр. музыка, дизайн, бег" />
+              </label>
+
+              <label class="field">
+                <span class="field-label">Город (опционально)</span>
+                <input id="searchCity" name="city" type="text" placeholder="Санкт‑Петербург" />
+              </label>
+
+              <div class="row">
+                <button class="btn btn-primary" type="submit">Найти</button>
+                <button class="btn btn-ghost" type="button" id="clearSearch">Сбросить</button>
+              </div>
+
+              <p class="muted" id="searchHint">Подсказка: кликните по тегу интереса в карточке, чтобы быстро отфильтровать.</p>
+            </form>
+          </section>
+
+          <section class="card">
+            <div class="row row-space">
+              <h2 class="card-title">Результаты</h2>
+              <button class="btn btn-ghost" type="button" id="seedDemo">Загрузить демо‑данные</button>
+            </div>
+
+            <div id="searchMeta" class="muted" aria-live="polite"></div>
+            <div id="searchResults" class="cards" aria-live="polite"></div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <p class="muted">© <span id="year"></span> Community Club. Демо‑лендинг.</p>
+        <div class="footer-links">
+          <a class="nav-link" href="index.html">Главная</a>
+          <a class="nav-link" href="profile.html">Профиль (пример)</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

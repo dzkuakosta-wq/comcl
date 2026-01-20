@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Community Club — найди единомышленников</title>
+    <meta name="description" content="Community‑клуб, где люди находят единомышленников по интересам и собираются в активности." />
+
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+    <header class="site-header">
+      <div class="container header-row">
+        <a class="brand" href="index.html" aria-label="На главную">
+          <span class="brand-mark" aria-hidden="true">CC</span>
+          <span class="brand-text">Community Club</span>
+        </a>
+
+        <nav class="nav" aria-label="Основная навигация">
+          <a class="nav-link" href="#about">О клубе</a>
+          <a class="nav-link" href="#benefits">Преимущества</a>
+          <a class="nav-link" href="#pricing">Тарифы</a>
+          <a class="nav-link" href="#join">Вступить</a>
+          <a class="nav-link" href="search.html">Поиск</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <h1 class="hero-title">Ты не одинок в своих увлечениях: здесь тебя ждут те, кто чувствует так же.</h1>
+            <p class="hero-subtitle">
+              Присоединяйся к нашему сообществу и почувствуй себя частью чего-то большего.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#join">Зарегистрироваться</a>
+              <a class="btn btn-ghost" href="search.html">Посмотреть участников</a>
+            </div>
+
+            <dl class="hero-metrics" aria-label="Короткие факты">
+              <div class="metric">
+                <dt class="metric-label">Формат</dt>
+                <dd class="metric-value">онлайн + офлайн</dd>
+              </div>
+              <div class="metric">
+                <dt class="metric-label">Активности</dt>
+                <dd class="metric-value">по интересам</dd>
+              </div>
+              <div class="metric">
+                <dt class="metric-label">Скорость</dt>
+                <dd class="metric-value">поиск за 1 минуту</dd>
+              </div>
+            </dl>
+          </div>
+
+          <aside class="card hero-card" aria-label="Быстрый поиск">
+            <h2 class="card-title">Быстрый поиск</h2>
+            <p class="muted">Введите интерес — покажем подходящих участников из демо‑набора и тех, кто зарегистрировался.</p>
+
+            <form id="quickSearchForm" class="stack" autocomplete="off">
+              <label class="field">
+                <span class="field-label">Интерес</span>
+                <input id="quickSearchInput" name="interest" type="text" placeholder="Напр. бег, дизайн, JavaScript" />
+              </label>
+              <button class="btn btn-primary" type="submit">Найти</button>
+            </form>
+
+            <div class="divider" role="presentation"></div>
+
+            <div id="quickSearchResults" class="stack" aria-live="polite">
+              <p class="muted">Подсказка: попробуйте “дизайн”, “музыка”, “английский”.</p>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container">
+          <h2>О клубе</h2>
+          <p>
+            Community Club — это место, где вы находите людей со схожими целями и интересами. Мы поддерживаем
+            знакомства, тематические группы и инициативы участников.
+          </p>
+
+          <div class="grid-3">
+            <article class="card">
+              <h3 class="card-title">Интересы → группы</h3>
+              <p class="muted">Выбирайте интересы и находите подходящие мини‑комьюнити.</p>
+            </article>
+
+            <article class="card">
+              <h3 class="card-title">Встречи и созвоны</h3>
+              <p class="muted">Лёгкий формат: от 30‑минутных созвонов до мастер‑майндов.</p>
+            </article>
+
+            <article class="card">
+              <h3 class="card-title">Проекты и коллаборации</h3>
+              <p class="muted">Ищите партнёров, тестируйте идеи, собирайте команды.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="benefits" class="section section-alt">
+        <div class="container">
+          <h2>Как мы помогаем находить единомышленников</h2>
+
+          <div class="grid-2">
+            <div class="card">
+              <h3 class="card-title">Поиск по интересам</h3>
+              <ul class="list">
+                <li>Поиск по ключевым словам</li>
+                <li>Фильтры и подсказки</li>
+                <li>Ссылка на профиль</li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <h3 class="card-title">Профиль участника</h3>
+              <ul class="list">
+                <li>Имя, город, роль</li>
+                <li>Список интересов</li>
+                <li>Короткое “о себе”</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="pricing" class="section">
+        <div class="container">
+          <div class="page-head">
+            <h2>Тарифные планы</h2>
+            <p class="muted">Выберите подходящий план для участия в клубе. Все тарифы включают доступ к поиску участников и базовым функциям.</p>
+          </div>
+
+          <div class="pricing-grid">
+            <article class="pricing-card">
+              <div class="pricing-header">
+                <h3 class="pricing-title">Базовый</h3>
+                <p class="muted">Для начинающих</p>
+              </div>
+
+              <div class="pricing-price">
+                <div class="price-old">990 ₽</div>
+                <div class="price-current">
+                  <span class="price-amount">495</span>
+                  <span class="price-currency">₽</span>
+                  <span class="price-period">/месяц</span>
+                </div>
+                <div class="price-discount">-50%</div>
+              </div>
+
+              <ul class="pricing-features">
+                <li>Поиск участников по интересам</li>
+                <li>Базовый профиль</li>
+                <li>До 3 активных групп</li>
+                <li>Поддержка сообщества</li>
+              </ul>
+
+              <a class="btn btn-primary" href="#join">Выбрать план</a>
+            </article>
+
+            <article class="pricing-card pricing-card-featured">
+              <div class="pricing-badge">Наиболее выгодный</div>
+              <div class="pricing-header">
+                <h3 class="pricing-title">Основной</h3>
+                <p class="muted">Для активных участников</p>
+              </div>
+
+              <div class="pricing-price">
+                <div class="price-old">1650 ₽</div>
+                <div class="price-current">
+                  <span class="price-amount">990</span>
+                  <span class="price-currency">₽</span>
+                  <span class="price-period">/месяц</span>
+                </div>
+                <div class="price-discount">-40%</div>
+              </div>
+
+              <ul class="pricing-features">
+                <li>Всё из Базового плана</li>
+                <li>Неограниченное количество групп</li>
+                <li>Приоритетная поддержка</li>
+                <li>Доступ к эксклюзивным событиям</li>
+                <li>Создание собственных активностей</li>
+              </ul>
+
+              <a class="btn btn-primary" href="#join">Выбрать план</a>
+            </article>
+
+            <article class="pricing-card">
+              <div class="pricing-header">
+                <h3 class="pricing-title">Премиум</h3>
+                <p class="muted">Максимум возможностей</p>
+              </div>
+
+              <div class="pricing-price">
+                <div class="price-old">2900 ₽</div>
+                <div class="price-current">
+                  <span class="price-amount">1450</span>
+                  <span class="price-currency">₽</span>
+                  <span class="price-period">/месяц</span>
+                </div>
+                <div class="price-discount">-50%</div>
+              </div>
+
+              <ul class="pricing-features">
+                <li>Всё из Основного плана</li>
+                <li>Персональный менеджер сообщества</li>
+                <li>Организация крупных мероприятий</li>
+                <li>Аналитика активности</li>
+                <li>Приоритет в рекомендациях</li>
+              </ul>
+
+              <a class="btn btn-primary" href="#join">Выбрать план</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="join" class="section">
+        <div class="container">
+          <div class="grid-2">
+            <div>
+              <h2>Регистрация в клубе</h2>
+              <p class="muted">
+                Заполните форму — мы создадим базовый профиль. Позже сможете отредактировать интересы и описание.
+              </p>
+
+              <div class="notice" role="note">
+                <strong>Демо‑версия:</strong> данные сохраняются в вашем браузере через <code>localStorage</code>.
+              </div>
+            </div>
+
+            <div class="card">
+              <h3 class="card-title">Форма регистрации</h3>
+
+              <form id="signupForm" class="stack" novalidate>
+                <div class="grid-2">
+                  <label class="field">
+                    <span class="field-label">Имя *</span>
+                    <input name="name" type="text" required minlength="2" placeholder="Алина" />
+                  </label>
+
+                  <label class="field">
+                    <span class="field-label">Город</span>
+                    <input name="city" type="text" placeholder="Москва" />
+                  </label>
+                </div>
+
+                <label class="field">
+                  <span class="field-label">Email *</span>
+                  <input name="email" type="email" required placeholder="name@example.com" />
+                </label>
+
+                <label class="field">
+                  <span class="field-label">Интересы (через запятую) *</span>
+                  <input name="interests" type="text" required placeholder="дизайн, бег, английский" />
+                </label>
+
+                <label class="field">
+                  <span class="field-label">О себе</span>
+                  <textarea name="bio" rows="4" placeholder="Чем занимаетесь, что ищете в клубе?"></textarea>
+                </label>
+
+                <div class="row">
+                  <button class="btn btn-primary" type="submit">Создать профиль</button>
+                  <button class="btn btn-ghost" type="reset">Очистить</button>
+                </div>
+
+                <p id="signupMessage" class="muted" aria-live="polite"></p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <p class="muted">© <span id="year"></span> Community Club. Демо‑лендинг.</p>
+        <div class="footer-links">
+          <a class="nav-link" href="search.html">Поиск</a>
+          <a class="nav-link" href="profile.html">Профиль (пример)</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
